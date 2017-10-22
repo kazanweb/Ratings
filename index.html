@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/ratings.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body class="page">
+
+	<div class="section">
+
+		<div class="ratings">
+			<div class="ratings__section js-ratings__section">
+				<div class="ratings__start"></div>
+				<div class="ratings__click"></div>
+				<div class="ratings__disable"></div>
+				<div class="ratings__hover"></div>
+			</div>
+		</div>
+		<!-- /.ratings -->
+
+		<p>
+			<b>Структура HTML</b>
+		</p>
+
+		<pre>
+
+			&lt;div class="ratings"&gt;
+				&lt;div class="ratings__section js-ratings__section"&gt;
+					&lt;div class="ratings__start"&gt;&lt;/div&gt;
+					&lt;div class="ratings__click"&gt;&lt;/div&gt;
+					&lt;div class="ratings__disable"&gt;&lt;/div&gt;
+					&lt;div class="ratings__hover"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- /.ratings --&gt;
+
+			&lt;div class="ratings ratings_output"&gt;
+				&lt;div class="ratings__section"&gt;
+					&lt;div class="ratings__start"&gt;&lt;/div&gt;
+					&lt;div class="ratings__click" style="width: 80%;"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- end ratings --&gt;
+
+		</pre>
+
+		<p>
+			<b>В скрипте</b>
+		</p>
+
+		<pre>
+			new Ratings({
+				element: item,					// передаем элемент
+				width: 13 * 5 / 5,				// общая ширина блока рейтинга
+				clickFn: function(index) {
+					alert(index);
+				}
+			});
+		</pre>
+
+	</div>
+
+</body>
+</html>
