@@ -31,6 +31,8 @@
 		</div>
 		<!-- /.ratings -->
 
+		<br>
+		<br>
 		<p>
 			<b>Структура HTML</b>
 		</p>
@@ -63,8 +65,8 @@
 
 		<pre>
 			new Ratings({
-				element: item,					// передаем элемент
-				width: 13 * 5 / 5,				// общая ширина блока рейтинга
+				element: document.querySelector('.js-ratings__section'),	// передаем элемент
+				width: 120 / 5,							// общая ширина блока рейтинга, деленная на количество звезд
 				clickFn: function(index) {
 					alert(index);
 				}
