@@ -34,6 +34,18 @@
 		<!-- /.ratings -->
 
 		<br>
+
+		<div class="ratings">
+			<div class="ratings__section ratings__section_small js-ratings__section">
+				<div class="ratings__start"></div>
+				<div class="ratings__click"></div>
+				<div class="ratings__disable"></div>
+				<div class="ratings__hover"></div>
+			</div>
+		</div>
+		<!-- /.ratings -->
+
+		<br>
 		<br>
 		<p>
 			<b>Структура HTML</b>
@@ -74,7 +86,7 @@
 		<pre>
 			new Ratings({
 				element: document.querySelector('.js-ratings__section'),	// передаем элемент
-				width: 120 / 5,							// общая ширина блока рейтинга, деленная на количество звезд
+				countRate: 5,							// кол-во оценок
 				clickFn: function(index) {
 					alert(index);
 				}

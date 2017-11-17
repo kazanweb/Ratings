@@ -26,7 +26,7 @@
 			this.tags.hover = this.element.querySelector('.ratings__hover');
 			this.tags.click = this.element.querySelector('.ratings__click');
 
-			this.widthElement = opts.width;
+			this.widthElement = this.element.offsetWidth / opts.countRate;
 			this.width_votes = 0;
 			this.votes = 0;
 

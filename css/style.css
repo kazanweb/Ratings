@@ -270,6 +270,10 @@ dfn[title] {
   vertical-align: middle;
   cursor: pointer;
 }
+.ratings__section_small {
+  height: 10px;
+  width: 120px;
+}
 .ratings_output .ratings__section {
   cursor: default;
 }

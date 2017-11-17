@@ -1,11 +1,16 @@
 $(document).ready(function() {
 
-	new Ratings({
-		element: document.querySelector('.js-ratings__section'),
-		width: 120 / 5,
-		clickFn: function(index) {
-			alert(index);
-		}
+
+	$('.js-ratings__section').each(function(i) {
+
+		new Ratings({
+			element: this,
+			countRate: (i == 0 ? 5 : 10),
+			clickFn: function(index) {
+				alert(index);
+			}
+		});
+
 	});
 
 });
