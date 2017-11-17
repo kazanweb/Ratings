@@ -281,6 +281,7 @@ dfn[title] {
   left: 0;
   top: 0;
   height: 100%;
+  background-size: auto 100% !important;
 }
 .ratings__start,
 .ratings__disable {
