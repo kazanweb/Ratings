@@ -33,7 +33,7 @@
 <pre>
 	new Ratings({
 		element: document.querySelector('.js-ratings__section'),	// передаем элемент
-		countRate: 5,							//  кол-во оценок
+		countRate: 5,							//  кол-во оценок, необязательный параметр, по умолчанию стоит 5
 		clickFn: function(index) {
 			alert(index);
 		}
