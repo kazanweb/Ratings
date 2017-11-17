@@ -5,6 +5,12 @@
 
 	function Ratings(opts) {
 
+		var opts = this.extend({
+			element: '',
+			countRate: 5,
+			clickFn: function() {}
+		}, opts);
+
 		this.element = opts.element;
 
 		if(!this.element) {
@@ -66,6 +72,17 @@
 
 			}, false);
 
+		},
+
+		extend: function (defaults, source) {
+
+			for (var key in source) {
+				if (source.hasOwnProperty(key)) {
+					defaults[key] = source[key];
+				}
+			}
+
+			return defaults;
 		}
 
 	};
