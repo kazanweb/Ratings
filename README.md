@@ -33,7 +33,7 @@
 <pre>
 	new Ratings({
 		element: document.querySelector('.js-ratings__section'),	// передаем элемент
-		width: 120 / 5,							// общая ширина блока рейтинга, деленная на количество звезд
+		countRate: 5,							//  кол-во оценок
 		clickFn: function(index) {
 			alert(index);
 		}
